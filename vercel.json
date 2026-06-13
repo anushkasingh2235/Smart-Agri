@@ -12,7 +12,7 @@
       "dest": "main.py"
     }
   ],
-  "buildCommand": "python agri/manage.py collectstatic --noinput",
+  "buildCommand": "python agri/manage.py migrate --noinput && python agri/manage.py collectstatic --noinput",
   "env": {
     "DJANGO_SETTINGS_MODULE": "agri.settings",
     "PYTHONUNBUFFERED": "1"
